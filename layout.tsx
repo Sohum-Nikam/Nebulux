@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     images: ["/opengraph-image.png"],
   },
   icons: {
-    icon: [{ url: "/favicon.png", type: "image/svg+xml" }],
+    icon: [{ url: "/favicon.png", type: "image/png" }],
   },
   generator: "v0.app",
 }
