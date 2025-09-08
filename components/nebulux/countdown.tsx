@@ -47,15 +47,15 @@ export const Countdown: React.FC = () => {
 function FlipCard({ value, label }: { value: string; label: string }) {
   return (
     <div className="flex flex-col items-center">
-      <div className="relative w-16 h-12 md:w-20 md:h-14 perspective-600">
-        {/* Top half */}
-        <div className="absolute top-0 left-0 right-0 h-full bg-black/80 border border-white/20 rounded-lg flex items-center justify-center overflow-hidden">
-          <span className="text-2xl md:text-3xl font-bold text-white font-press-start">
+      <div className="relative w-14 h-12 md:w-16 md:h-14 perspective-600">
+        {/* Single display for the value */}
+        <div className="absolute inset-0 bg-black/80 border border-white/20 rounded-lg flex items-center justify-center overflow-hidden">
+          <span className="text-xl md:text-2xl font-bold text-white font-press-start">
             {value}
           </span>
         </div>
       </div>
-      <span className="mt-2 text-xs md:text-sm text-white font-press-start tracking-widest bg-black/90 px-3 py-1.5 rounded-lg border border-white/40 shadow-2xl font-bold" style={{ 
+      <span className="mt-2 text-xs md:text-sm text-white font-press-start tracking-widest bg-black/90 px-2 py-1 rounded-lg border border-white/40 shadow-2xl font-bold" style={{ 
         textShadow: '0 0 8px rgba(255,255,255,0.7), 0 0 16px rgba(255,255,255,0.5)',
         zIndex: 10
       }}>
